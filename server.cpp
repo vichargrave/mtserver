@@ -114,7 +114,7 @@ int main(int argc, char** argv)
         exit(1);
     }
 
-    // Add connection handlers to the queue as connections are accepted
+    // Add a work item to the queue for each connection
     while (1) {
         TCPStream* connection = connectionAcceptor->accept(); 
         if (!connection) {
