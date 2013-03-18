@@ -65,7 +65,6 @@ class ConnectionHandler : public Thread
                 stream->send(input, len);
                 printf("thread %lu, echoed '%s' back to the client\n", 
                        (long unsigned int)self(), input);
-                sleep(1);
             }
             delete item; 
         }
