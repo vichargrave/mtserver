@@ -88,7 +88,7 @@ int main(int argc, char** argv)
         ip = argv[3];
     }
  
-    // Create the queue and worker threads
+    // Create the queue and consumer (worker) threads
     wqueue<WorkItem*>  queue;
     for (int i = 0; i < workers; i++) {
         ConnectionHandler* handler = new ConnectionHandler(queue);
