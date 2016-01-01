@@ -1,16 +1,14 @@
-mtserver
-========
+# mtserver
 
-Example source code for the article 'Multithreaded Work Queue Based Server in C++'
+Example source code for the article [_Multithreaded Work Queue Based Server in C++_](http://vichargrave.com/multithreaded-work-queue-based-server-2/)
 
-Build
-=====
+# Build
 
-1. Get the threads code at https://github.com/vichargrave/threads.git.
-2. Get the work queue code at https://github.com/vichargrave/wqueue
-3. Get the TCP sockets code at https://github.com/vichargrave/tcpsockets
+1. Get the [threads](https://github.com/vichargrave/threads.git) code.
+2. Get the [work queue](https://github.com/vichargrave/wqueue) code.
+3. Get the [TCP sockets](https://github.com/vichargrave/tcpsockets) code.
 4. Place the mtserver, threads, wqueue and tcpsockets directories at the 
-   same directory level, e.g. ${HOME}/src/mtserver, ${HOME}/src/threads, 
-   ${HOME}/src/wqueue and ${HOME}/src/tcpsockets.
-5. cd to ${HOME}/src/mtserver.
-6. Build the test client and server applications by running 'make'.
+   same directory level, e.g. `${HOME}/src/mtserver`, `${HOME}/src/threads`, 
+   `${HOME}/src/wqueue` and `${HOME}/src/tcpsockets`.
+5. cd to `${HOME}/src/mtserver`.
+6. Build the test client and server applications by running `make`.
