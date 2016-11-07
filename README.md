@@ -1,6 +1,6 @@
 # mtserver
 
-Example source code for the article [_Multithreaded Work Queue Based Server in C++_](http://vichargrave.com/multithreaded-work-queue-based-server-2/)
+Example code from my Multithreaded Work Queue Based Server in C++ blog.
 
 # Build
 
