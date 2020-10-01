@@ -61,7 +61,7 @@ class ConnectionHandler : public Thread
             char input[256];
             int len;
             while ((len = stream->receive(input, sizeof(input)-1)) > 0 ){
-                input[len] = NULL;
+                input[len] = '\0';
                 stream->send(input, len);
                 printf("thread %lu, echoed '%s' back to the client\n", 
                        (long unsigned int)self(), input);
