@@ -9,8 +9,7 @@ TARGET		= server
 all: $(SOURCES) $(TARGET)
 
 $(TARGET): $(OBJECTS) 
-	$(CC)  $(OBJECTS) -o $@ $(LDFLAGS)
-
+	$(CC)  $(OBJECTS) $(LDFLAGS) -o $@ 
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
 
